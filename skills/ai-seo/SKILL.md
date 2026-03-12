@@ -382,6 +382,16 @@ After optimization, test discoverability monthly with these prompts:
 6. **Localize for AI**: AI engines serving different markets may have different training data
 7. **Measure before and after**: Always establish a baseline before making changes
 
+## Bundled Resources
+
+### Scripts
+
+- **`scripts/check-ai-readiness.sh`**: Quick readiness check — scans project for robots.txt, llms.txt, sitemap, JSON-LD, meta tags. Run with `bash scripts/check-ai-readiness.sh [project-root]`. Returns a scored checklist. Exit code 0 = all pass, 1 = issues found.
+
+### References
+
+- **`references/structured-data-patterns.md`**: Copy-paste JSON-LD templates for 8 page types (Homepage, Product, Article, FAQ, LocalBusiness, TouristAttraction, HowTo, Event). Use when implementing Layer 1 structured data.
+
 ## References
 
 - [llms.txt specification](https://llmstxt.org/)
