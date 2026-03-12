@@ -1,0 +1,12 @@
+{
+  "name": "ai-seo",
+  "version": "1.0.0",
+  "description": "AEO/GEO optimization for AI search engines — make websites discoverable by ChatGPT, Claude, Perplexity, and Google AI Overview",
+  "author": {
+    "name": "JHyeok5",
+    "url": "https://github.com/JHyeok5"
+  },
+  "repository": "https://github.com/JHyeok5/claude-plugin-ai-seo",
+  "license": "MIT",
+  "keywords": ["seo", "aeo", "geo", "ai-search", "llms-txt", "structured-data", "mcp"]
+}
