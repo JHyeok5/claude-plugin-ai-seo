@@ -8,5 +8,6 @@
   },
   "repository": "https://github.com/JHyeok5/claude-plugin-ai-seo",
   "license": "MIT",
-  "keywords": ["seo", "aeo", "geo", "ai-search", "llms-txt", "structured-data", "mcp"]
+  "keywords": ["seo", "aeo", "geo", "ai-search", "llms-txt", "structured-data", "mcp"],
+  "hooks": "./hooks/hooks.json"
 }

@@ -55,6 +55,56 @@ The skill creates `.ai-seo/` in your project on first run:
 
 Each subsequent run compares with previous scores and shows improvement delta.
 
+## Auto-Check Hook
+
+When installed, the plugin automatically monitors edits to AI-relevant files:
+
+| File | What it checks |
+|------|---------------|
+| `robots.txt` | Warns if AI crawlers (GPTBot, ClaudeBot) are blocked |
+| `llms.txt` | Warns if missing required structure |
+| `*.html` | Notifies when JSON-LD structured data is modified |
+
+No manual invocation needed — works in the background.
+
+## Script Output Example
+
+Running `bash scripts/check-ai-readiness.sh /path/to/project` produces:
+
+```
+# AI SEO Readiness Check
+
+**Project**: /path/to/project
+**Date**: 2026-03-12T10:30:00Z
+
+## Layer 1: Technical Foundation
+
+- [x] robots.txt exists
+- [x] robots.txt allows AI crawlers (GPTBot/ClaudeBot/PerplexityBot)
+- [ ] llms.txt exists
+- [x] sitemap.xml exists (static or dynamic)
+
+## Structured Data
+
+- [x] JSON-LD structured data found
+  - Found ~3 @type declarations
+
+## Meta Tags
+
+- [x] Open Graph tags found
+- [x] hreflang tags found (multilingual)
+- [ ] Canonical URL tags found
+
+## Summary
+
+**Score**: 6/8
+**Readiness**: 75%
+
+### Action Items
+1. Fix: llms.txt exists
+2. Fix: Canonical URL tags found
+```
+
 ## Requirements
 
 - Claude Code CLI
